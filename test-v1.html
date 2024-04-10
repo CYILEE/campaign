@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Open YouTube and Google</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://linkstorage.linkfire.com/medialinks/images/cd820b5d-7948-4250-b7e0-0c4294623ca6/artwork-440x440.jpg');
+            background-size: cover;
+        }
+
+        /* 將 iframe 父元素的背景設置為 "xx.jpg" */
+        .iframe-container {
+            background-image: url('https://i.kfs.io/artist/global/6443,0v13/fit/500x500.jpg');
+            background-size: cover;
+            width: 100%;
+            height: 600px; /* 調整高度為600px */
+            margin-bottom: 10px; /* Add margin bottom to create space */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+
+        #countdown {
+            display: none;
+        }
+
+        button {
+            margin-top: 20px; /* Add margin top to create space */
+        }
+    </style>
+</head>
+<body background="https://i.kfs.io/artist/global/6443,0v13/fit/500x500.jpg">
+
+<!-- Spotify Embed -->
+<div class="iframe-container">
+    <iframe frameborder="0" src="https://open.spotify.com/embed/track/4mMEIkOxUX3kheFudXdszj?utm_source=generator" frameborder="0" allowtransparency="true" allow="encrypted-media" style="border-radius:12px;" autoplay></iframe>
+</div>
+<div>
+<iframe src="https://open.spotify.com/track/4mMEIkOxUX3kheFudXdszj?si=f234226815db44a3&theme=white" allowtransparency="true" style="display: none;"></iframe>
+<!-- Button to Open Webpages -->
+<button onclick="openWebpages()">支持我</button>
+
+<script>
+function openWebpages() {
+    // Open YouTube in new tab
+    window.open("https://www.youtube.com/watch?v=eU-5a5pSQmk&pp=ygUP5LiA55u06KKr5oSb6JGX", "_blank");
+
+    // Redirect to Google search
+    window.location.href = "https://www.google.com.tw/search?q=%E8%95%AD%E7%85%8C%E5%A5%87%2C++%E4%B8%80%E7%9B%B4%E8%A2%AB%E6%84%9B%E8%91%97";
+}
+</script>
+
+</body>
+</html>
